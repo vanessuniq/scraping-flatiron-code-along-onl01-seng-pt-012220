@@ -15,6 +15,7 @@ class Scraper
       course.description = post.ss('p').text.strip
     end
   end
+  
   def print_courses
     self.make_courses
     Course.all.each do |course|
