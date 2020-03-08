@@ -13,7 +13,7 @@ class Scraper
       course.title = post.css('h2').text.strip
       course.schedule = post.css('.date').text.strip
       course.description = post.ss('p').text.strip
-    end 
+    end
   end
   def print_courses
     self.make_courses
